@@ -2,5 +2,8 @@
 # clase  N10 
 aqui se habla del hola mundo
 
-#clase 11
+# clase  N11
 introduccion a las variables
+
+# clase N12
+Introduccion a la consola
