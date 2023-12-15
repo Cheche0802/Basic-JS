@@ -23,3 +23,6 @@ Prompt, confirm y alert
 # clase N20
 Tipos de datos primitivos definicion
 
+# clase N21
+ejercicios de datos primitivos
+

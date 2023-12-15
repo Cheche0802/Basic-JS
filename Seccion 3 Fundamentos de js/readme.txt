@@ -12,3 +12,13 @@ strings es una cadena de caracteres que puede estar entre comilla, apostrofes o 
 symbols es un valor unico 
 
 
+class n° 21
+//formas de declarar un strings
+let nombre = 'palabra'
+utilizando let no se puede reinicializar una variable es incorrecto aparte que no tiene sentido el hacerlo
+si se desea saber que tipo de dato es el valor que apunta una variable se hace de la siguiente manera
+console.log(typeof nombre) // devuelve string
+en javascript en comun utilizar el camelcase
+cuando se declarada una variable seria de la siguiente forma "superPoder"
+
+
