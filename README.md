@@ -26,3 +26,5 @@ Tipos de datos primitivos definicion
 # clase N21
 ejercicios de datos primitivos
 
+# clase N22
+palabras reservadas

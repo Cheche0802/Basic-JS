@@ -21,4 +21,24 @@ console.log(typeof nombre) // devuelve string
 en javascript en comun utilizar el camelcase
 cuando se declarada una variable seria de la siguiente forma "superPoder"
 
+clase n~ 22
+por lo general los servidores donde se aloja los aplicativos son basados en linux lo que significa que son 
+case sentive por eso se recomienda no utilizar cuando se cree un archivo lo siguiente:
+1. palabras capitalizadas
+2. caracteres como el espacio
+3. utilizar la letra "ñ" 
+La declaracion de las variables no deben tener caracteres especiales ya que es parte una mala practica 
+se debe tener un estandar a la hora de programar
+se bene tener estas condiciones:
+1 agregar un numero antes en las variable
+2 incluir un "." en la variable ya que es para la definicion de los objetos
+
+reglas
+1 lowerCamelcase para las variables
+2 operCamelcase  para los nombre de las clases
+3 underscore para separa numeros
+4. 
+
+
+
 
