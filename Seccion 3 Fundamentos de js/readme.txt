@@ -37,7 +37,16 @@ reglas
 1 lowerCamelcase para las variables
 2 operCamelcase  para los nombre de las clases
 3 underscore para separa numeros
-4. 
+
+
+clase n~23
+los arreglos son un listado de informacion que contiene un grupo de elementos 
+usualmente esta informacion dentro del arreglo es del mismo tipo de dato 
+lo cual en js no es una regla
+
+para declarar un arreglo es le la siguiente forma
+const arr =  new Array(10)
+
 
 
 
