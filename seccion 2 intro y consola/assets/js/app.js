@@ -1,3 +1,4 @@
+//clase N14
 //Si se incluye la url del js en el head primero se ejecutara el archivo js 
 //y no cargara el html hasta que finalice el archivo js
 //el archivo js solo se puede cargar en dos secciones en el head o en el body
@@ -7,6 +8,7 @@
 
 var mNombre = 'Jose Monterrer';
 
+//clase N14
 // para saber el tamaño alto por consola  se utiliza
 //window.outerHeight
 //para el ancho

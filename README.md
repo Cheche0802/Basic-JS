@@ -16,3 +16,6 @@ Orden y lugar de las importaciones
 
 # clase N15
 Principal problema de las importaciones con var
+
+# clase N15
+Prompt, confirm y alert
