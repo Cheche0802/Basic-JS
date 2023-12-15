@@ -17,5 +17,9 @@ Orden y lugar de las importaciones
 # clase N15
 Principal problema de las importaciones con var
 
-# clase N15
+# clase N16
 Prompt, confirm y alert
+
+# clase N20
+Tipos de datos primitivos definicion
+
