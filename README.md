@@ -28,3 +28,6 @@ ejercicios de datos primitivos
 
 # clase N22
 palabras reservadas
+
+# clase N23 & N24
+Arreglos
