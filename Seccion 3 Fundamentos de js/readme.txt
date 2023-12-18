@@ -48,6 +48,12 @@ para declarar un arreglo es le la siguiente forma
 const arr =  new Array(10)
 
 
+clase n°25
+javascript tiene dos tipos de datos 
+1. los primitivos
+2. los objetos
+
+
 
 
 

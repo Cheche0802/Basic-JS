@@ -31,3 +31,6 @@ palabras reservadas
 
 # clase N23 & N24
 Arreglos
+
+# clase N25 
+Objetos Literales
