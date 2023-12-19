@@ -38,3 +38,6 @@ Objetos Literales
 
 # clase 27
 funciones basicas y flecha
+
+# clase 28
+retorno de las funciones

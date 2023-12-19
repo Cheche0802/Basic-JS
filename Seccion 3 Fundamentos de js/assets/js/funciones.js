@@ -58,3 +58,44 @@ const saludarFlecha3 =  nombre  => {
 }
 
 saludarFlecha3('zuleimar');
+
+//para el retorno de las funciones
+
+function saludar4(nombre) {
+    console.log('Hola mundo '+ nombre );
+    return 10;
+}
+const returnSaludar = saludar4('Dante', 30, true, 'Venezuela');
+
+console.log(returnSaludar);
+
+console.log({returnSaludar});
+
+
+function sumar(a , b) {
+    return a + b
+}
+
+console.log(sumar (1 ,2 ));
+
+//forma 1 de una funcion de flecha
+const sumar2 = (a , b) => { return a + b }
+
+console.log(sumar2 (10, 15));
+
+//forma 2 de una funcion de flecha siempre y cuando el procedimiento sea de una sola linea
+const sumar3 = (a , b) =>  a + b 
+console.log(sumar3 (20, 25));
+
+
+function getAleatorio() {
+    return Math.random();
+}
+console.log(getAleatorio());
+
+//funcion flecha
+
+const aleatorio = () => Math.random();
+console.log(aleatorio() );
+
+

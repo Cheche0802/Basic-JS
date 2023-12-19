@@ -54,6 +54,12 @@ javascript tiene dos tipos de datos
 2. los objetos
 
 
+clase n°28
+si se realiza un console log o se realiza alguna opercion despues del return esta nunca se realizara
+en el return se puede retornar cualquier asignacio que se desee o se necesite 
+
+
+
 
 
 
