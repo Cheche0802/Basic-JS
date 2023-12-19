@@ -32,5 +32,9 @@ palabras reservadas
 # clase N23 & N24
 Arreglos
 
-# clase N25 
+# clase N25 & 26
 Objetos Literales
+
+
+# clase 27
+funciones basicas y flecha
