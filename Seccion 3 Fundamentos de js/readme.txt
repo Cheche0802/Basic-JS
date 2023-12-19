@@ -59,6 +59,10 @@ si se realiza un console log o se realiza alguna opercion despues del return est
 en el return se puede retornar cualquier asignacio que se desee o se necesite 
 
 
+clase n~29
+para la funciones landa si se desean imprimir los argumentos se debetener las siguientes consideraciones.
+1 despues del parametros rest el cual es el siguiente ("...") no se puede agregar otro parametro
+2. si se desea extraer una variable del parametro rest este tendra su argumento independiente 
 
 
 

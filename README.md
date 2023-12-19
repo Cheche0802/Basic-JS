@@ -41,3 +41,6 @@ funciones basicas y flecha
 
 # clase 28
 retorno de las funciones
+
+# clase 29
+tips funciones armunetos y destructuracion de objetos
