@@ -47,3 +47,6 @@ tips funciones armunetos y destructuracion de objetos
 
 # clase 33
 valor, referencia y romper referencia
+
+# clase 34
+if y ELSE
