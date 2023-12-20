@@ -33,4 +33,8 @@ clase 39
 Protip operador ternario
 
 clase 40
+switch
+
+clase 41 
+whil y do while
 
