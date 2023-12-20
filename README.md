@@ -60,3 +60,7 @@ Asignaciones
 
 # clase 37
 Operador Ternario
+
+
+# clase 38
+Operador Ternario
