@@ -55,12 +55,14 @@ if y ELSE
 Logica booleana
 
 
-# clase 36
+# clase 37
 Asignaciones
 
-# clase 37
+# clase 38
 Operador Ternario
 
-
-# clase 38
+# clase 39
 protip
+
+# clase 40
+Switch

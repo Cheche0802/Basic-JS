@@ -32,3 +32,5 @@ operador ternario
 clase 39
 Protip operador ternario
 
+clase 40
+
