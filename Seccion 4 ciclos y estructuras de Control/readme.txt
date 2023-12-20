@@ -29,3 +29,6 @@ siempre y cuando el primer valor sea "true " de lo contrario no lo realizara
 clase 38 
 operador ternario
 
+clase 39
+Protip operador ternario
+
