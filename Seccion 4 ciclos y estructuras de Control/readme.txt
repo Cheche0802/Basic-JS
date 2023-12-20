@@ -25,3 +25,7 @@ asignaciones
 cuando se declara una contante y se le asigna varios valores con el operador "&&" este toma el ultimo valor
 siempre y cuando el primer valor sea "true " de lo contrario no lo realizara
 
+
+clase 38 
+operador ternario
+

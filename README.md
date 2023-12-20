@@ -57,3 +57,6 @@ Logica booleana
 
 # clase 36
 Asignaciones
+
+# clase 37
+Operador Ternario
