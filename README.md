@@ -63,4 +63,4 @@ Operador Ternario
 
 
 # clase 38
-Operador Ternario
+protip
