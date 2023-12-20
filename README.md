@@ -50,3 +50,10 @@ valor, referencia y romper referencia
 
 # clase 34
 if y ELSE
+
+# clase 36
+Logica booleana
+
+
+# clase 36
+Asignaciones
