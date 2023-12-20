@@ -69,3 +69,6 @@ Switch
 
 # clase 41
 while do-while
+
+# clase 42
+For

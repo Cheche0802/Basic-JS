@@ -36,5 +36,8 @@ clase 40
 switch
 
 clase 41 
-whil y do while
+while y do while
+
+clase 42
+for
 
