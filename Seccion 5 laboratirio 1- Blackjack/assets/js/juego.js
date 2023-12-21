@@ -43,9 +43,36 @@ const pedirCarta = () => {
     const borrarCarta = deck.pop()
     console.log (borrarCarta);
     console.log(deck);
+
+    return borrarCarta
 }
 
 //ciclo para validar si el deck es igual a 0
 //for (let i in deck) {
     pedirCarta();
 //}
+
+
+const valorCarta = (carta) => {
+
+    const valor = carta.substring(0, carta.length - 1);
+    let puntos = 0;
+
+    return (isNaN(valor)) ? (valor === 'A') ? 11 : 10  :valor * 1;
+
+
+   /* if (isNaN(valor)){
+
+        console.log('no es un numero');
+        puntos = (valor === 'A') ? 11 : 10;
+
+    }else{
+        console.log('Es un numero');
+        puntos = valor * 1 ;
+    }*/
+
+}
+
+const valor =  valorCarta( pedirCarta());
+
+console.log({valor});
