@@ -72,3 +72,6 @@ while do-while
 
 # clase 42
 For
+
+# clase 53 
+manupulacion del DOM
