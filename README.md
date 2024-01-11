@@ -87,3 +87,6 @@ puntos de la computadora
 
 # clase 58
 nuevo juego y mensajes
+
+# clase 63
+Patron Modulo
