@@ -75,3 +75,6 @@ For
 
 # clase 53 
 manupulacion del DOM
+
+# clase 55 
+Evento click -pedir carta

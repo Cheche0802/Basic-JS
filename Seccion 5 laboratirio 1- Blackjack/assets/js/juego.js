@@ -7,7 +7,15 @@
 
 let deck = [];
 const typeOfCards = ['C', 'H', 'D', 'S'];
-const uniques = ['A', 'J', 'Q', 'K']
+const uniques = ['A', 'J', 'Q', 'K'];
+
+let puntosjugador = 0,
+    puntoscomputadora = 0;
+
+const puntosHTML = document.querySelectorAll('small');
+
+//Referencias del html
+const btnPedir = document.querySelector('#btnPedir');
 
 
 // create the deck with all cards
@@ -41,8 +49,7 @@ const pedirCarta = () => {
         throw 'No hay cartas en el deck';
     }
     const borrarCarta = deck.pop()
-    console.log (borrarCarta);
-    console.log(deck);
+
 
     return borrarCarta
 }
@@ -73,6 +80,16 @@ const valorCarta = (carta) => {
 
 }
 
-const valor =  valorCarta( pedirCarta());
 
-console.log({valor});
+//Eventos
+
+btnPedir.addEventListener('click', () => {
+    
+
+    const carta = pedirCarta();
+    puntosjugador = puntosjugador + valorCarta(carta);
+
+    puntosHTML[0].innerText = puntosjugador;
+
+    
+})
