@@ -12,10 +12,14 @@ const uniques = ['A', 'J', 'Q', 'K'];
 let puntosjugador = 0,
     puntoscomputadora = 0;
 
-const puntosHTML = document.querySelectorAll('small');
+
 
 //Referencias del html
 const btnPedir = document.querySelector('#btnPedir');
+const puntosHTML = document.querySelectorAll('small');
+
+const divCartasJugador = document.querySelector('#jugador-cartas');
+const divCartaComputadora = document.querySelector('#computadora-cartas');
 
 
 // create the deck with all cards
@@ -91,5 +95,20 @@ btnPedir.addEventListener('click', () => {
 
     puntosHTML[0].innerText = puntosjugador;
 
-    
+    //<img class="carta" src="assets/cartas/2C.png" alt="" srcset=""></img>
+
+    const imgCarta = document.createElement('img');
+    imgCarta.src= `assets/cartas/${carta}.png`;
+    imgCarta.className = 'carta';
+    //otra forma seria
+    //imgCarta.classList.add('carta');
+    divCartasJugador.append(imgCarta);
+
+    if (puntosjugador > 21 ){
+        console.warn('Perdiste');
+        btnPedir.disabled =true
+    }else if (puntosjugador === 21){
+        console.log('ganaste');
+        btnPedir.disabled =true
+    }
 })
