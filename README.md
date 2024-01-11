@@ -79,5 +79,8 @@ manupulacion del DOM
 # clase 55 
 Evento click -pedir carta
 
-#clase 56
+# clase 56
 agregar imagen a la tarjeta por html
+
+# clase 57
+puntos de la computadora

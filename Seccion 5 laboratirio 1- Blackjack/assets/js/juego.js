@@ -10,12 +10,14 @@ const typeOfCards = ['C', 'H', 'D', 'S'];
 const uniques = ['A', 'J', 'Q', 'K'];
 
 let puntosjugador = 0,
-    puntoscomputadora = 0;
+    puntosComputadora = 0;
 
 
 
 //Referencias del html
 const btnPedir = document.querySelector('#btnPedir');
+const btnStop = document.querySelector('#btnStop');
+
 const puntosHTML = document.querySelectorAll('small');
 
 const divCartasJugador = document.querySelector('#jugador-cartas');
@@ -83,7 +85,36 @@ const valorCarta = (carta) => {
     }*/
 
 }
+// turno computadora
 
+const turnoComputadora = (puntosMinimos) =>{
+
+    do {
+    
+    const carta = pedirCarta();
+    puntosComputadora = puntosComputadora + valorCarta(carta);
+
+    puntosHTML[1].innerText = puntosComputadora;
+
+    //<img class="carta" src="assets/cartas/2C.png" alt="" srcset=""></img>
+
+    const imgCarta = document.createElement('img');
+    imgCarta.src= `assets/cartas/${carta}.png`;
+    imgCarta.className = 'carta';
+    //otra forma seria
+    //imgCarta.classList.add('carta');
+    divCartaComputadora.append(imgCarta);
+    if (puntosMinimos > 21){
+        break;
+    }
+
+    if (puntosMinimos < puntosComputadora){
+        console.log('gano el jugador');
+    }
+
+
+    } while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21) );
+}
 
 //Eventos
 
@@ -107,8 +138,24 @@ btnPedir.addEventListener('click', () => {
     if (puntosjugador > 21 ){
         console.warn('Perdiste');
         btnPedir.disabled =true
+        btnStop.disabled =true
+        turnoComputadora(puntosjugador);
+
     }else if (puntosjugador === 21){
         console.log('ganaste');
-        btnPedir.disabled =true
+        btnPedir.disabled =true;
+        btnStop.disabled =true
+        turnoComputadora(puntosjugador);
     }
+
 })
+
+
+btnStop.addEventListener('click', () => {
+
+    btnPedir.disabled =  true;
+    btnStop.disabled =  true;
+    turnoComputadora(puntosjugador);
+})
+
+//todo borrar
