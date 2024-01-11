@@ -17,6 +17,8 @@ let puntosjugador = 0,
 //Referencias del html
 const btnPedir = document.querySelector('#btnPedir');
 const btnStop = document.querySelector('#btnStop');
+const btnNuevoJuego = document.querySelector('#btnNew');
+
 
 const puntosHTML = document.querySelectorAll('small');
 
@@ -104,18 +106,29 @@ const turnoComputadora = (puntosMinimos) =>{
     //otra forma seria
     //imgCarta.classList.add('carta');
     divCartaComputadora.append(imgCarta);
-    if (puntosMinimos > 21){
-        break;
-    }
+        if (puntosMinimos > 21){
+            alert('la computadora Gano')
+            break;
+        }
 
-    if (puntosMinimos < puntosComputadora){
-        console.log('gano el jugador');
-    }
+
 
 
     } while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21) );
-}
 
+    setTimeout(() => {
+        if (puntosComputadora === puntosMinimos) {
+            alert('la casa Gana');
+        }else if (puntosMinimos > 21){
+            alert('La Casa ha ganado!');
+        }else if (puntosComputadora > 21) {
+            alert('El jugador ha ganado!');
+        }else{
+            alert(`La Casa ha ganado!`);
+        }
+    }, 10);
+
+}
 //Eventos
 
 btnPedir.addEventListener('click', () => {
@@ -158,4 +171,21 @@ btnStop.addEventListener('click', () => {
     turnoComputadora(puntosjugador);
 })
 
-//todo borrar
+
+
+btnNuevoJuego.addEventListener('click', () => {
+
+    btnPedir.disabled =false;
+    btnStop.disabled = false;
+
+    deck = [];
+    deck = crearDeck();
+
+    puntosComputadora = 0;
+    puntosjugador = 0;
+    puntosHTML[0].innerText = 0;
+    puntosHTML[1].innerText = 0;
+
+    divCartaComputadora.innerHTML = '';
+    divCartasJugador.innerHTML= ''
+})

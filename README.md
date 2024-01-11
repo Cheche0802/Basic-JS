@@ -84,3 +84,6 @@ agregar imagen a la tarjeta por html
 
 # clase 57
 puntos de la computadora
+
+# clase 58
+nuevo juego y mensajes
