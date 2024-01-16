@@ -90,3 +90,6 @@ nuevo juego y mensajes
 
 # clase 63
 Patron Modulo
+
+# clase 64
+Optimizaciones primera parte
