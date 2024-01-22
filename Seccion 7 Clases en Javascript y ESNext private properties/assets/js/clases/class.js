@@ -1,6 +1,9 @@
 
 
 class Persona {
+
+
+
     //orden
     //1 propiedad y metodos estaticos
     //2 propiedades de la clase
@@ -8,6 +11,17 @@ class Persona {
     //4  set y gets
     //5 metodos
     //propiedades privadas
+
+    static _conteo = 0;
+
+    static get conteo(){
+        return Persona._conteo + ' instancias';
+    }
+//metodo
+    static mensaje (){
+        console.log(this.nombre);
+        console.log('Hola a todos soy un metodo estatico');
+    }
 
         //Forma1
         nombre = '';
@@ -20,6 +34,8 @@ class Persona {
         this.nombre = nombre;
         this.codigo= codigo;
         this.frase= frase;
+
+        Persona._conteo++;
     }
 
     //los metodos coumunmente van bajo el constructor
@@ -42,18 +58,35 @@ class Persona {
 }
 
 
-
-const spiderman = new Persona('Peter', 'Spiderman', ' Un gran poder es una gran responsabilidad' );
+/*
 
 const ironman = new Persona('Tony', 'Ironman', 'yo soy iron man' );
+
+
+
 console.log(spiderman);
 console.log(ironman);
 
-spiderman.quienSoy();
-spiderman.miFrase();
+
 
 spiderman.setComidaFavorita = 'Pie de cereza de la tia May';
 // Esto se puede hacer pero no es recomendado 
 spiderman.nemesis = 'Duende Verde';
 
-console.log(spiderman);
+console.log(spiderman);*/
+
+const spiderman = new Persona('Peter', 'Spiderman', ' Un gran poder es una gran responsabilidad' );
+const ironman = new Persona('Tonny', 'Ironman', 'I am ironman' );
+spiderman.quienSoy();
+spiderman.miFrase();
+
+//Persona._conteo = 2;
+console.log(`Conteo statico`, Persona._conteo );
+console.log(Persona.conteo);
+Persona.mensaje();
+
+//No es recomendado pero se puede hacer
+Persona.propiedadExterna = 'Hola mundo';
+
+console.log(Persona.propiedadExterna);
+console.log(Persona)
