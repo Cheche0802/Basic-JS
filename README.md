@@ -93,3 +93,8 @@ Patron Modulo
 
 # clase 64
 Optimizaciones primera parte
+
+
+# clase 72 
+para saber si algo lo soporta js
+visitar cainuse.com
