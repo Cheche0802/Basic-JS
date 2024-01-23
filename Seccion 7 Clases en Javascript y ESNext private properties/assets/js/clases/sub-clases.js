@@ -2,16 +2,6 @@
 
 class Persona {
 
-
-
-    //orden
-    //1 propiedad y metodos estaticos
-    //2 propiedades de la clase
-    //3 constructor
-    //4  set y gets
-    //5 metodos
-    //propiedades privadas
-
     static _conteo = 0;
 
     static get conteo(){
@@ -57,21 +47,36 @@ class Persona {
     }
 }
 
+// Se extiende de la clase persona y solo se utiliza el parametro que se necesita
+class Heroe extends Persona {
+    
+    clan = 'Sin clan';
 
+    constructor (nombre, codigo, frase){
 
+        //primero se debe llamar el constructor del padre antes de declarar 
+        super(nombre, codigo, frase); //llamado al constructor de la clase padre
+
+        this.clan = 'The Avangers';
+    }
+
+    quienSoy(){
+        console.log (`Soy ${this.nombre}, ${this.clan}`)
+        //si se desea llamar tambien el metodo de la clase padre es de la siguiente manera
+        super.quienSoy();
+    }
+
+}
 
 const spiderman = new Persona('Peter', 'Spiderman', ' Un gran poder es una gran responsabilidad' );
-const ironman = new Persona('Tonny', 'Ironman', 'I am ironman' );
+
+const miles = new Heroe('Miles', 'Spiderman', ' Un gran poder es una gran responsabilidad' );
+
+console.log(spiderman);
+
+console.log(miles)
+
 spiderman.quienSoy();
-spiderman.miFrase();
 
-//Persona._conteo = 2;
-console.log(`Conteo statico`, Persona._conteo );
-console.log(Persona.conteo);
-Persona.mensaje();
+miles.quienSoy();
 
-//No es recomendado pero se puede hacer
-Persona.propiedadExterna = 'Hola mundo';
-
-console.log(Persona.propiedadExterna);
-console.log(Persona)
