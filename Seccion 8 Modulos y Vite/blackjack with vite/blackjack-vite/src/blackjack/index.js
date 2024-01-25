@@ -31,7 +31,7 @@ const divCartaComputadora = document.querySelector('#computadora-cartas');
 
 
 
-crearDeck();
+deck = crearDeck(typeOfCards, uniques);
 
 // Esta funcion permite Pedir carta
 
