@@ -12,9 +12,9 @@ export const crearDeck = (tipoDeCarta, tiposEspeciales) => {
   if(!tipoDeCarta) throw new Error('TiposDeCarta es obligatorio');
   if(tipoDeCarta.length === 0) throw new Error('TiposDeCarta tiene que ser un arreglo de string');
 
-  if(!tiposEspeciales) throw new Error('TiposDeCarta es obligatorio');
-  if(tiposEspeciales.length === 0) throw new Error('TiposDeCarta tiene que ser un arreglo de string');
-  
+  if(!tiposEspeciales) throw new Error('tiposEspeciales es obligatorio');
+  if(tiposEspeciales.length === 0) throw new Error('tiposEspeciales tiene que ser un arreglo de string');
+
     let deck = [];
 
     for( let i=2; i<= 10; i++){
