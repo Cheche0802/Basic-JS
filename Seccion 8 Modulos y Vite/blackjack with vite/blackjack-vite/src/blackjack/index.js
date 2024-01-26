@@ -28,13 +28,9 @@ const puntosHTML = document.querySelectorAll('small');
 const divCartasJugador = document.querySelector('#jugador-cartas');
 const divCartaComputadora = document.querySelector('#computadora-cartas');
 
-
-
-
 deck = crearDeck(typeOfCards, uniques);
 
 // Esta funcion permite Pedir carta
-
 const pedirCarta = () => {
 
     if (deck.length === 0){
