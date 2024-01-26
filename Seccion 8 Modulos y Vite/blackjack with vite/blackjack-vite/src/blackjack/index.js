@@ -1,8 +1,6 @@
 
 import _ from 'underscore';
-import { crearDeck } from './usecases/create-deck.js';
-import { pedirCarta } from './usecases/pedir-deck.js';
-import { valorCarta } from './usecases/valor-carta.js';
+import {crearDeck, pedirCarta,valorCarta} from './usecases/index.js'
 /*
 *  2C = two of clubs    (Treboles)
 *  2D = two of diamonfs (Diamantes)
@@ -40,8 +38,6 @@ deck = crearDeck(typeOfCards, uniques);
 //for (let i in deck) {
     pedirCarta(deck);
 //}
-
-
 
 // turno computadora
 
