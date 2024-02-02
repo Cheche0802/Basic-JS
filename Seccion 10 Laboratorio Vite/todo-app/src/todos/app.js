@@ -1,10 +1,23 @@
+import todoStore from '../store/todo.store';
 import html from './app.html?raw';
+import { renderTodos } from './use-cases';
 
+
+const ElementIDs ={
+    TodoList: '.todo-list'
+}
 
 /**
  * @param {Srings} elements
  */
 export  const App =(elementId) =>{
+
+    const displatTodos =  ()=>{
+    
+        const todos= todoStore.getTodos(todoStore.getCurrentFilter());
+        renderTodos(ElementIDs.TodoList, todos);
+
+    }
 
     //cuando la funcion App() se llama
 
@@ -14,6 +27,7 @@ export  const App =(elementId) =>{
         app.innerHTML = html;
 
         document.querySelector(elementId).append(app);
+        displatTodos();
     })();
 
 
