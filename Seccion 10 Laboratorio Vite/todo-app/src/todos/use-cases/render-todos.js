@@ -7,11 +7,17 @@ import { createTodoHTML } from './create-todo-html';
  * @param {Todo} todos 
  */
 
+let element;
+
 export const renderTodos =  (elementId, todos = []) => { 
 
     //Todo referencia
-    const element = document.querySelector(elementId);
+    if (!element)
+        element =document.querySelector(elementId);
+    
+    if (!element) throw new Error(`Elemnt ${elementId} not found`);
 
+    element.innerHTML = ''; 
     todos.forEach(todo => {
         element.append(createTodoHTML(todo));
         
